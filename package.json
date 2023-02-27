@@ -1,23 +1,23 @@
 {
-  "name": "sso-request-2",
+  "name": "sso-host-pageb",
   "version": "1.0.0",
-  "description": "setup ``` npm init -y && npm install express -save-dev ``` run ``` node serverReqB.js ```",
+  "description": "setup ``` npm init -y && npm install express -save-dev ``` run ``` node index.js ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/fictitiousness/sso-request-2.git"
+    "url": "git+https://github.com/hypothesisobservation/sso-host-pageb.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://bitbucket.org/fictitiousness/sso-request-2/issues"
+    "url": "https://github.com/hypothesisobservation/sso-host-pageb/issues"
   },
-  "homepage": "https://bitbucket.org/fictitiousness/sso-request-2#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/hypothesisobservation/sso-host-pageb#readme",
+  "dependencies": {
     "express": "^4.18.2"
   }
 }

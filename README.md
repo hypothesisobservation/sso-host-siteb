@@ -1,7 +1,7 @@
-# sso-request-2
+# sso-host-pageB
 setup
 ```
-npm init -y && npm install express -save-dev
+npm init -y && npm install express -save
 ```
 run
 ```
