@@ -21,7 +21,7 @@
             text-align: center;
         }
     </style>
-    <script src="https://odd-cod-sneakers.cyclic.app/index.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 </head>
 
 <body>
@@ -43,41 +43,56 @@
         var btn3 = document.getElementsByTagName('button')[2];
         var btn4 = document.getElementsByTagName('button')[3];
         var frame = document.getElementById('child').contentWindow;
+        /**
+         * RequireJS全局配置文件
+         */
+        requirejs.config({
+            waitSeconds: 20000,
+            //预加载JS文件的配置项，默认可不用添加.js后缀
+            paths:{
+                //RequireJS默认假定所有的依赖资源都是JS脚本，因此无需再module ID上再加上js后缀。
+                webpackNumbers:"https://odd-cod-sneakers.cyclic.app/index.bundle"
+            }
+        });
 
-        // ...
-        // Global variable
-        webpackNumbers.attachEvent(frame,'https://strange-stole-newt.cyclic.app',span,btn4);
-        // Property in the window object
-        window.webpackNumbers.attachEvent(frame,'https://strange-stole-newt.cyclic.app',span,btn4);
-        // ...
-        btn1.onclick = function () {
-            var msg = input.value;
+        requirejs(['webpackNumbers'],function(webpackNumbers){
+
+            
+
             // ...
             // Global variable
-            webpackNumbers.sendMsg(frame,'https://strange-stole-newt.cyclic.app',msg);
-            // Property in the window object
-            window.webpackNumbers.sendMsg(frame,'https://strange-stole-newt.cyclic.app',msg);
+            webpackNumbers.attachEvent(frame,'https://strange-stole-newt.cyclic.app',span,btn4);
             // ...
-        }
-        btn2.onclick = function () {
-            // ...
-            // Global variable
-            webpackNumbers.login(frame,'https://strange-stole-newt.cyclic.app');
-            // Property in the window object
-            window.webpackNumbers.login(frame,'https://strange-stole-newt.cyclic.app');
-            // ...
-        }
-        btn3.onclick = function () {
-            // ...
-            // Global variable
-            webpackNumbers.logout(frame,'https://strange-stole-newt.cyclic.app');
-            // Property in the window object
-            window.webpackNumbers.logout(frame,'https://strange-stole-newt.cyclic.app');
-            // ...
-        }
-        btn4.onclick = function () {
-            window.open('https://strange-stole-newt.cyclic.app',"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
-        }
+            btn1.onclick = function () {
+                var msg = input.value;
+                // ...
+                // Global variable
+                webpackNumbers.sendMsg(frame,'https://strange-stole-newt.cyclic.app',msg);
+                // Property in the window object
+                window.webpackNumbers.sendMsg(frame,'https://strange-stole-newt.cyclic.app',msg);
+                // ...
+            }
+            btn2.onclick = function () {
+                // ...
+                // Global variable
+                webpackNumbers.login(frame,'https://strange-stole-newt.cyclic.app');
+                // Property in the window object
+                window.webpackNumbers.login(frame,'https://strange-stole-newt.cyclic.app');
+                // ...
+            }
+            btn3.onclick = function () {
+                // ...
+                // Global variable
+                webpackNumbers.logout(frame,'https://strange-stole-newt.cyclic.app');
+                // Property in the window object
+                window.webpackNumbers.logout(frame,'https://strange-stole-newt.cyclic.app');
+                // ...
+            }
+            btn4.onclick = function () {
+                window.open('https://strange-stole-newt.cyclic.app',"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
+            }
+
+        });
 
     </script>
 </body>
