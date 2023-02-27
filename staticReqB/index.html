@@ -34,7 +34,7 @@
         <button>popup</button>
         <p style="text-align: left;">message : <span></span></p>
     </div>
-    <iframe id="child" src="https://strange-stole-newt.cyclic.app"></iframe>
+    <iframe id="child" src="https://sso-iframe-page.onrender.com"></iframe>
     <script>
         var input = document.getElementsByTagName('input')[0];
         var span = document.getElementsByTagName('span')[0];
@@ -61,35 +61,35 @@
 
             // ...
             // Global variable
-            webpackNumbers.attachEvent(frame,'https://strange-stole-newt.cyclic.app',span,btn4);
+            webpackNumbers.attachEvent(frame,'https://sso-iframe-page.onrender.com',span,btn4);
             // ...
             btn1.onclick = function () {
                 var msg = input.value;
                 // ...
                 // Global variable
-                webpackNumbers.sendMsg(frame,'https://strange-stole-newt.cyclic.app',msg);
+                webpackNumbers.sendMsg(frame,'https://sso-iframe-page.onrender.com',msg);
                 // Property in the window object
-                window.webpackNumbers.sendMsg(frame,'https://strange-stole-newt.cyclic.app',msg);
+                window.webpackNumbers.sendMsg(frame,'https://sso-iframe-page.onrender.com',msg);
                 // ...
             }
             btn2.onclick = function () {
                 // ...
                 // Global variable
-                webpackNumbers.login(frame,'https://strange-stole-newt.cyclic.app');
+                webpackNumbers.login(frame,'https://sso-iframe-page.onrender.com');
                 // Property in the window object
-                window.webpackNumbers.login(frame,'https://strange-stole-newt.cyclic.app');
+                window.webpackNumbers.login(frame,'https://sso-iframe-page.onrender.com');
                 // ...
             }
             btn3.onclick = function () {
                 // ...
                 // Global variable
-                webpackNumbers.logout(frame,'https://strange-stole-newt.cyclic.app');
+                webpackNumbers.logout(frame,'https://sso-iframe-page.onrender.com');
                 // Property in the window object
-                window.webpackNumbers.logout(frame,'https://strange-stole-newt.cyclic.app');
+                window.webpackNumbers.logout(frame,'https://sso-iframe-page.onrender.com');
                 // ...
             }
             btn4.onclick = function () {
-                window.open('https://strange-stole-newt.cyclic.app',"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
+                window.open('https://sso-iframe-page.onrender.com',"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
             }
 
         });
